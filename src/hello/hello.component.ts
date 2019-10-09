@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 @Component({
-  selector: 'app-first',
+  selector: 'app-hello',
   template:`
             <p>
               Hello {{ courseName }}
@@ -10,6 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HelloComponent implements OnInit {
   courseName: string = "Angular";
+
+  changeName(){
+    this.courseName="Typescript";
+  }
+
+
   constructor() { }
   ngOnInit() {
   }
