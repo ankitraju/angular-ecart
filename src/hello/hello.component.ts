@@ -1,12 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 @Component({
-  selector: 'app-hello',
-  template:`
-            <p>
-              Hello {{ courseName }}
-            </p>
-          `,
-  styles: [`p{ color: blue; }`]
+   selector: 'app-hello',
+  templateUrl: './hello.component.html',
+  styleUrls: ['./hello.component.css']
 })
 export class HelloComponent implements OnInit {
   courseName: string = "Angular";
